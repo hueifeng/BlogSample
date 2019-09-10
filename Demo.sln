@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware.errorhandler", "middleware.errorhandler\middleware.errorhandler.csproj", "{75A458F7-9FE3-468C-A105-3D932EFD2153}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAspectCore", "DotNetAspectCore\DotNetAspectCore.csproj", "{9C7B1364-C75D-4447-A7BA-B78772021EE7}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{75A458F7-9FE3-468C-A105-3D932EFD2153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75A458F7-9FE3-468C-A105-3D932EFD2153}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75A458F7-9FE3-468C-A105-3D932EFD2153}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75A458F7-9FE3-468C-A105-3D932EFD2153}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9C7B1364-C75D-4447-A7BA-B78772021EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9C7B1364-C75D-4447-A7BA-B78772021EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C7B1364-C75D-4447-A7BA-B78772021EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
