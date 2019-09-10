@@ -129,7 +129,7 @@ AspectCore是一个面向切面编程,基于.NetCore和.NetFramwork的扩平台�
           {
               services.AddTransient<ICustomService,CustomService>();
               services.AddMvc();
-              //全局拦截器。使用AddDynamicProxy(Action<IAspectConfiguration>)的重载方法，其中IAspectConfiguration提供Interceptors注册全局拦截器:
+              //全局拦截器。使用ConfigureDynamicProxy(Action<IAspectConfiguration>)的重载方法，其中IAspectConfiguration提供Interceptors注册全局拦截器:
               services.ConfigureDynamicProxy(config=> {
                   config.Interceptors.AddTyped<CustomInterceptorAttribute>();
               });
