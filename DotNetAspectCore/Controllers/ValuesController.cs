@@ -20,6 +20,7 @@ namespace DotNetAspectCore.Controllers
         [HttpGet]
         public DateTime Get()
         {
+            Test.Val = "hahahahahah";
             return _icustomserveice.GetDateTime();
         }
 
