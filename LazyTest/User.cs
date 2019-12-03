@@ -10,6 +10,7 @@ namespace LazyTest
 
         public int Age { get; set; }
 
+        public Boolean MyProperty { get; set; }
 
         public User() {
             this.Name = "Name";
