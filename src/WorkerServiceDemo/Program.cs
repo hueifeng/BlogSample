@@ -14,7 +14,6 @@ namespace WorkerServiceDemo
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
             #region Windows
-
             //return Host.CreateDefaultBuilder(args)
 
             //    .ConfigureServices((hostContext, services) =>

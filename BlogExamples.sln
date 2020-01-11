@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseCompression", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerServiceDemo", "src\WorkerServiceDemo\WorkerServiceDemo.csproj", "{D336D7CF-EAD8-4E81-8384-6B4F3C5BEA20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETCoreWindowsService", "src\ASPNETCoreWindowsService\ASPNETCoreWindowsService.csproj", "{6F619A45-EB79-472D-9D0A-810CBE258690}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{D336D7CF-EAD8-4E81-8384-6B4F3C5BEA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D336D7CF-EAD8-4E81-8384-6B4F3C5BEA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D336D7CF-EAD8-4E81-8384-6B4F3C5BEA20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F619A45-EB79-472D-9D0A-810CBE258690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F619A45-EB79-472D-9D0A-810CBE258690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F619A45-EB79-472D-9D0A-810CBE258690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F619A45-EB79-472D-9D0A-810CBE258690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
