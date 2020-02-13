@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Magicodes.ExporterAndImporter.Core;
+using Magicodes.ExporterAndImporter.Excel;
+using Magicodes.ExporterAndImporter.Pdf;
+using Magicodes.IE.Exporter.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Magicodes.IE.Exporter.Models;
-using Magicodes.ExporterAndImporter.Excel;
-using Magicodes.ExporterAndImporter.Core;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using Magicodes.ExporterAndImporter.Pdf;
-using System.Data;
+using System.Threading.Tasks;
 
 namespace Magicodes.IE.Exporter.Controllers
 {
@@ -33,10 +31,11 @@ namespace Magicodes.IE.Exporter.Controllers
             return View();
         }
 
-        public async Task<IActionResult> ExporterExcel() {
+        public async Task<IActionResult> ExporterExcel()
+        {
             IExporter exporter = new ExcelExporter();
-           
-            var result = await exporter.Export(Path.Combine("wwwroot","test.xlsx"), new List<StudentExcel>()
+
+            var result = await exporter.Export(Path.Combine("wwwroot", "test.xlsx"), new List<StudentExcel>()
                 {
                     new StudentExcel
                     {
@@ -63,8 +62,10 @@ namespace Magicodes.IE.Exporter.Controllers
             return File("test.xlsx", "application/ms-excel", result.FileName);
         }
 
-        public async Task<IActionResult> ExporterPdf() {
-            var exporter = new PdfExporter();
+        public async Task<IActionResult> ExporterPdf()
+        {
+           // IExporter exporter11 = new ExcelExporter();
+            IExportListFileByTemplate exporter = new PdfExporter();
             var result = await exporter.ExportListByTemplate(Path.Combine("wwwroot", "test.pdf"), new List<StudentPdf>()
             {
                  new StudentPdf
