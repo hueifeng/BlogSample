@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNETCoreWindowsService", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDemo", "src\ConsoleDemo\ConsoleDemo.csproj", "{2AA20872-95DA-40B5-AE2C-E28C858EF47A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualsAndGetHashCode", "src\EqualsAndGetHashCode\EqualsAndGetHashCode.csproj", "{40D6829A-9F37-4D1C-AB29-48715440FA32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EqualsAndGetHashCode", "src\EqualsAndGetHashCode\EqualsAndGetHashCode.csproj", "{40D6829A-9F37-4D1C-AB29-48715440FA32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.IE.Exporter", "src\Magicodes.IE.Exporter\Magicodes.IE.Exporter.csproj", "{A16384A5-DD3B-4EAD-A1F4-C0EF447B385A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{40D6829A-9F37-4D1C-AB29-48715440FA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D6829A-9F37-4D1C-AB29-48715440FA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40D6829A-9F37-4D1C-AB29-48715440FA32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16384A5-DD3B-4EAD-A1F4-C0EF447B385A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16384A5-DD3B-4EAD-A1F4-C0EF447B385A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16384A5-DD3B-4EAD-A1F4-C0EF447B385A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16384A5-DD3B-4EAD-A1F4-C0EF447B385A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
