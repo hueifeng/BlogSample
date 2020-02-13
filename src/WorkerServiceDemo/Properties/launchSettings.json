@@ -1,10 +1,12 @@
-﻿{
+{
   "profiles": {
     "WorkerServiceDemo": {
       "commandName": "Project",
+      "launchBrowser": true,
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "http://localhost:5000/"
     }
   }
 }
