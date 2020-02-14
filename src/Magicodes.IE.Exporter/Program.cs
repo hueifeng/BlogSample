@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Magicodes.IE.Exporter
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -24,3 +24,4 @@ namespace Magicodes.IE.Exporter
                 });
     }
 }
+

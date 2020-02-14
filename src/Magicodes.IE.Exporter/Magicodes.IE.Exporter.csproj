@@ -4,33 +4,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>60c7be94-5100-4c32-97e0-1e967af092c3</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..\..\..\OpenSource\Magicodes.IE</DockerfileContext>
+    <DockerfileContext>..\..</DockerfileContext>
 
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Magicodes.IE.Excel" Version="2.0.2" />
+    <PackageReference Include="Magicodes.IE.Pdf" Version="2.0.2" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Excel\Magicodes.ExporterAndImporter.Excel.csproj" />
-    <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Pdf\Magicodes.ExporterAndImporter.Pdf.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Magicodes.ExporterAndImporter.Excel">
-      <HintPath>..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Excel\bin\Debug\netstandard2.1\Magicodes.ExporterAndImporter.Excel.dll</HintPath>
-    </Reference>
-    <Reference Include="Magicodes.ExporterAndImporter.Pdf">
-      <HintPath>..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Pdf\bin\Debug\netstandard2.1\Magicodes.ExporterAndImporter.Pdf.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-
-
 
 </Project>
