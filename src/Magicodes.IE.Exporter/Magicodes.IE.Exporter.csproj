@@ -9,13 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Magicodes.IE.Excel" Version="2.0.2" />
-    <PackageReference Include="Magicodes.IE.Pdf" Version="2.0.2" />
+    <PackageReference Include="Magicodes.IE.Excel" Version="2.1.0" />
+    <PackageReference Include="Magicodes.IE.Pdf" Version="2.1.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="simsun.ttc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
