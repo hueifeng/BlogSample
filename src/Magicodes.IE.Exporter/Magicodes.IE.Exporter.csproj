@@ -19,9 +19,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="simsun.ttc">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Excel\Magicodes.ExporterAndImporter.Excel.csproj" />
+    <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Pdf\Magicodes.ExporterAndImporter.Pdf.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Magicodes.ExporterAndImporter.Excel">
+      <HintPath>..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Excel\bin\Debug\netstandard2.1\Magicodes.ExporterAndImporter.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Magicodes.ExporterAndImporter.Pdf">
+      <HintPath>..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Pdf\bin\Debug\netstandard2.1\Magicodes.ExporterAndImporter.Pdf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+
 
 </Project>
