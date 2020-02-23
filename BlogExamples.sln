@@ -31,7 +31,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EqualsAndGetHashCode", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicodes.IE.Exporter", "src\Magicodes.IE.Exporter\Magicodes.IE.Exporter.csproj", "{2E7D4172-F347-45BE-BBE4-0A800074ABFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResponseCachingDemo", "src\ResponseCachingDemo\ResponseCachingDemo.csproj", "{363BF8C0-341F-48DC-AD3F-8698DF80F2A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseCachingDemo", "src\ResponseCachingDemo\ResponseCachingDemo.csproj", "{363BF8C0-341F-48DC-AD3F-8698DF80F2A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F7C2EE70-DEA3-427F-B92B-B83AD1FACF94}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Blog流程图.ppt = ..\..\..\..\Blog流程图.ppt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
