@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResponseCachingDemo", "src\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F7C2EE70-DEA3-427F-B92B-B83AD1FACF94}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Blog流程图.ppt = ..\..\..\..\Blog流程图.ppt
+		docs\Blog流程图.ppt = docs\Blog流程图.ppt
 	EndProjectSection
 EndProject
 Global
