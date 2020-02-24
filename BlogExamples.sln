@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDemo", "src\ConsoleD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EqualsAndGetHashCode", "src\EqualsAndGetHashCode\EqualsAndGetHashCode.csproj", "{40D6829A-9F37-4D1C-AB29-48715440FA32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicodes.IE.Exporter", "src\Magicodes.IE.Exporter\Magicodes.IE.Exporter.csproj", "{A16384A5-DD3B-4EAD-A1F4-C0EF447B385A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicodes.IE.Exporter", "src\Magicodes.IE.Exporter\Magicodes.IE.Exporter.csproj", "{A16384A5-DD3B-4EAD-A1F4-C0EF447B385A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
