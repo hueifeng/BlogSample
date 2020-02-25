@@ -38,7 +38,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F7C2EE70-D
 		docs\Blog流程图.ppt = docs\Blog流程图.ppt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadBalanceDemo", "src\LoadBalanceDemo\LoadBalanceDemo.csproj", "{22D32DE6-AED9-478C-A14F-277B3C884CA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadBalanceDemo", "src\LoadBalanceDemo\LoadBalanceDemo.csproj", "{22D32DE6-AED9-478C-A14F-277B3C884CA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95663004-A7B6-4733-9FE0-CF17A973B29A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
