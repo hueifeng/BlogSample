@@ -12,6 +12,7 @@ https://www.cnblogs.com/yyfh/
 - [ ] ASP.NET Core 模型绑定(Model Binding)
 - [ ] ASP.NET Core 视图(Views)
 - [x] [ASP.NET Core ResponseCache进行缓存操作](https://www.cnblogs.com/yyfh/p/12361255.html)
+- [x] [ASP.NET Core Razor 视图预编译、动态编译](https://www.cnblogs.com/yyfh/p/12373249.html)
 - [ ] ASP.NET Core Cookie&Session
 - [ ] ASP.NET Core 过滤器(Filters)
 - [ ] ASP.NET Core 异常处理(Exception Handler)
