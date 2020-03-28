@@ -47,7 +47,7 @@ namespace ResponseCompression
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-          app.UseResponseCompression();
+            app.UseResponseCompression();
             app.UseStaticFiles();
 
             app.UseRouting();
