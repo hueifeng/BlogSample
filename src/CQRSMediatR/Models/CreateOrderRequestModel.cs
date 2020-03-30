@@ -8,4 +8,6 @@ namespace CQRSMediatR.Commands
         public string UserId { get; set; }
         public string CardNumber { get; set; }
     }
+
+
 }
