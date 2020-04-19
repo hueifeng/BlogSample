@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSMediatR", "src\CQRSMedi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYSTEMNETHTTPJSON", "src\SYSTEMNETHTTPJSON\SYSTEMNETHTTPJSON.csproj", "{DE9ACA18-E198-4D41-A140-5A80EEC45F49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateScopes", "src\ValidateScopes\ValidateScopes.csproj", "{0C536C5A-9E54-4F92-B113-E7F0DD22E743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -275,6 +277,18 @@ Global
 		{DE9ACA18-E198-4D41-A140-5A80EEC45F49}.Release|x64.Build.0 = Release|Any CPU
 		{DE9ACA18-E198-4D41-A140-5A80EEC45F49}.Release|x86.ActiveCfg = Release|Any CPU
 		{DE9ACA18-E198-4D41-A140-5A80EEC45F49}.Release|x86.Build.0 = Release|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Debug|x64.Build.0 = Debug|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Debug|x86.Build.0 = Debug|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Release|x64.ActiveCfg = Release|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Release|x64.Build.0 = Release|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C536C5A-9E54-4F92-B113-E7F0DD22E743}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
