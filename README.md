@@ -18,7 +18,7 @@ https://www.cnblogs.com/yyfh/
 - [ ] ASP.NET Core 异常处理(Exception Handler)
 - [ ] ASP.NET Core 日志(Logging)
 - [ ] ASP.NET Core 分布式Session
-- [ ] ASP.NET Core 多语言(Localization)
+- [x] [ASP.NET Core 多语言(Localization)](https://blog.csdn.net/qq_27843785/article/details/105846386)
 - [ ] ASP.NET Core SignalR
 - [ ] ASP.NET Core 文件上传下载
 - [ ] ASP.NET Core 跨域请求(Cross-Origin Requests (CORS))
