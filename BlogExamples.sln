@@ -51,7 +51,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSMediatR", "src\CQRSMediatR\CQRSMediatR.csproj", "{46D51430-D531-4577-987A-09ECF4D5AB23}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalizationWebAPI", "src\LocalizationWebAPI\LocalizationWebAPI.csproj", "{3B9A4404-54FC-443E-9E91-22A62D23F2D3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Localization", "Localization", "{A4EE7893-0C96-4054-A63B-0DB76C84581F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalizationSingleResx", "src\LocalizationSingleResx\LocalizationSingleResx.csproj", "{604C0DA3-C6FE-4707-9A99-32FE1E84E329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -291,21 +293,24 @@ Global
 		{46D51430-D531-4577-987A-09ECF4D5AB23}.Release|x64.Build.0 = Release|Any CPU
 		{46D51430-D531-4577-987A-09ECF4D5AB23}.Release|x86.ActiveCfg = Release|Any CPU
 		{46D51430-D531-4577-987A-09ECF4D5AB23}.Release|x86.Build.0 = Release|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Debug|x64.Build.0 = Debug|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Debug|x86.Build.0 = Debug|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Release|x64.ActiveCfg = Release|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Release|x64.Build.0 = Release|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Release|x86.ActiveCfg = Release|Any CPU
-		{3B9A4404-54FC-443E-9E91-22A62D23F2D3}.Release|x86.Build.0 = Release|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Debug|x64.Build.0 = Debug|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Debug|x86.Build.0 = Debug|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|x64.ActiveCfg = Release|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|x64.Build.0 = Release|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|x86.ActiveCfg = Release|Any CPU
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{604C0DA3-C6FE-4707-9A99-32FE1E84E329} = {A4EE7893-0C96-4054-A63B-0DB76C84581F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86EC97F1-BC82-440D-A242-0757154EE947}

@@ -1,3 +1,4 @@
+using LocalizationSingleResx.Extensions;
 using LocalizationWebAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,7 +11,7 @@ using Microsoft.Extensions.Options;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace LocalizationWebAPI
+namespace LocalizationSingleResx
 {
     public class Startup
     {
@@ -29,11 +30,11 @@ namespace LocalizationWebAPI
             {
                 var supportedCultures = new List<CultureInfo>
                 {
-                    new CultureInfo("en-US"),
-                    new CultureInfo("zh-CN")
+                    new CultureInfo("en-us"),
+                    new CultureInfo("zh-cn")
                 };
 
-                options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
+                options.DefaultRequestCulture = new RequestCulture(culture: "en-us", uiCulture: "en-us");
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
                 options.RequestCultureProviders = new IRequestCultureProvider[] { new RouteDataRequestCultureProvider { IndexOfCulture = 1, IndexofUiCulture = 1 } };

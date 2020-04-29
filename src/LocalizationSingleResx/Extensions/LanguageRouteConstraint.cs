@@ -12,7 +12,7 @@ namespace LocalizationWebAPI.Extensions
                 return false;
 
             var culture = values["culture"].ToString();
-            return culture == "en-US" || culture == "zh-CN";
+            return culture == "en-us" || culture == "zh-cn";
         }
     }
 }

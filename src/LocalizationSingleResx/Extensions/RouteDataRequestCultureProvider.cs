@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Localization;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 
-namespace LocalizationWebAPI.Extensions
+namespace LocalizationSingleResx.Extensions
 {
     public class RouteDataRequestCultureProvider : RequestCultureProvider
     {

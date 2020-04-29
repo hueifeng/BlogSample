@@ -1,6 +1,6 @@
 using System;
 
-namespace LocalizationWebAPI
+namespace LocalizationSingleResx
 {
     public class WeatherForecast
     {

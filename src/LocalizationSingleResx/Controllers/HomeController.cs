@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LocalizationWebAPI.Localize;
-using Microsoft.AspNetCore.Http;
+﻿using LocalizationSingleResx.Localize;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 
-namespace LocalizationWebAPI.Controllers
+namespace LocalizationSingleResx.Controllers
 {
     [Route("{culture:culture}/[controller]")]
     [ApiController]
