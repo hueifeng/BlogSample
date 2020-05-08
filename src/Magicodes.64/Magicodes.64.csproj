@@ -10,9 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Magicodes.ExporterAndImporter.Core\Magicodes.ExporterAndImporter.Core.csproj" />
-    <ProjectReference Include="..\Magicodes.ExporterAndImporter.Csv\Magicodes.ExporterAndImporter.Csv.csproj" />
-    <ProjectReference Include="..\Magicodes.ExporterAndImporter.Excel\Magicodes.ExporterAndImporter.Excel.csproj" />
+    <ProjectReference Include="..\..\..\Magicodes.IE\src\Magicodes.ExporterAndImporter.Excel\Magicodes.ExporterAndImporter.Excel.csproj" />
   </ItemGroup>
 
 

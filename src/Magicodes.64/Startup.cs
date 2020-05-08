@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Magicodes._64.Extensions;
 using Magicodes._64.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,7 +27,9 @@ namespace Magicodes._64
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers(options => { options.Filters.Add(typeof(TestFilter)); });
+            services.AddControllers(options => { 
+               // options.Filters.Add(typeof(TestFilter));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +45,7 @@ namespace Magicodes._64
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseMiddleware<MagicodesMiddleware>();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
