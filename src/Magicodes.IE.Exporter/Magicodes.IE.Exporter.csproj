@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Magicodes.IE.Excel" Version="2.1.0" />
-    <PackageReference Include="Magicodes.IE.Pdf" Version="2.1.0" />
+    <PackageReference Include="Magicodes.IE.Excel" Version="2.2.0-beta9" />
+    <PackageReference Include="Magicodes.IE.Pdf" Version="2.2.0-beta9" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

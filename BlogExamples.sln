@@ -55,6 +55,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Localization", "Localizatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalizationSingleResx", "src\LocalizationSingleResx\LocalizationSingleResx.csproj", "{604C0DA3-C6FE-4707-9A99-32FE1E84E329}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicodes.64", "src\Magicodes.64\Magicodes.64.csproj", "{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -305,6 +307,18 @@ Global
 		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|x64.Build.0 = Release|Any CPU
 		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|x86.ActiveCfg = Release|Any CPU
 		{604C0DA3-C6FE-4707-9A99-32FE1E84E329}.Release|x86.Build.0 = Release|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Debug|x64.Build.0 = Debug|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Debug|x86.Build.0 = Debug|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Release|x64.ActiveCfg = Release|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Release|x64.Build.0 = Release|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Release|x86.ActiveCfg = Release|Any CPU
+		{D15387F7-7C52-4D91-8E71-3AB4BE39EF37}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

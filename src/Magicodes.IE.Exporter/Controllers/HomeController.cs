@@ -89,7 +89,7 @@ namespace Magicodes.IE.Exporter.Controllers
                         Remarks = "我叫MR.C,今年20岁",
                         Birthday=DateTime.Now
                     }
-            });
+            }).ConfigureAwait(false);
             return File("test.pdf", "application/pdf", result.FileName);
         }
 
