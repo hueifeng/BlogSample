@@ -11,6 +11,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Excel\Magicodes.ExporterAndImporter.Excel.csproj" />
+    <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Html\Magicodes.ExporterAndImporter.Html.csproj" />
+    <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Pdf\Magicodes.ExporterAndImporter.Pdf.csproj" />
+    <ProjectReference Include="..\..\..\..\OpenSource\Magicodes.IE\src\Magicodes.ExporterAndImporter.Word\Magicodes.ExporterAndImporter.Word.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="ExportTemplates\batchReceipt.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 

@@ -10,10 +10,12 @@ namespace Magicodes._64
     {
         private readonly RequestDelegate _next;
         private readonly ILogger<MagicodesMiddleware> _logger;
+        private readonly Extensions _extensions;
         public MagicodesMiddleware(RequestDelegate next, ILogger<MagicodesMiddleware> logger)
         {
             _next = next;
             _logger = logger;
+            _extensions=new Extensions();
         }
         public async Task InvokeAsync(HttpContext context)
         {
@@ -28,8 +30,8 @@ namespace Magicodes._64
                     context.Response.Body = memoryStream;
                     await _next.Invoke(context);
                     context.Response.Body = originalResponseBodyStream;
-                    var bodyAsText = await new Extensions().ReadResponseBodyStreamAsync(memoryStream);
-                    await new Extensions().HandleSuccessfulReqeustAsync(context: context, body: bodyAsText, httpStatusCode: 200,
+                    var bodyAsText = await _extensions.ReadResponseBodyStreamAsync(memoryStream);
+                    await _extensions.HandleSuccessfulReqeustAsync(context: context, body: bodyAsText, httpStatusCode: 200,
                         type: endpointMagicodesData.Type);
                 }
                 else

@@ -10,6 +10,12 @@ namespace Magicodes._64.Filters
 {
     public class MagicodesFilter : IAsyncResultFilter
     {
+        private readonly Extensions _extensions;
+        public MagicodesFilter()
+        {
+            _extensions=new Extensions();
+        }
+
         public async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
         {
             var result = context.Result;
@@ -21,7 +27,7 @@ namespace Magicodes._64.Filters
                 {
                     var timeConverter = new IsoDateTimeConverter { DateTimeFormat = "yyyy-MM-dd HH:mm:ss" };
                     var json = JsonConvert.SerializeObject(objectResult.Value, timeConverter);
-                    await new Extensions().HandleSuccessfulReqeustAsync(context: context.HttpContext, body: json, httpStatusCode: 200,
+                    await _extensions.HandleSuccessfulReqeustAsync(context: context.HttpContext, body: json, httpStatusCode: 200,
                         type: endpointMagicodesData.Type);
                 }
             }
