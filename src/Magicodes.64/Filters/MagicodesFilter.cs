@@ -27,7 +27,7 @@ namespace Magicodes._64.Filters
                 {
                     var timeConverter = new IsoDateTimeConverter { DateTimeFormat = "yyyy-MM-dd HH:mm:ss" };
                     var json = JsonConvert.SerializeObject(objectResult.Value, timeConverter);
-                    await _extensions.HandleSuccessfulReqeustAsync(context: context.HttpContext, body: json, httpStatusCode: 200,
+                    await _extensions.HandleSuccessfulReqeustAsync(context: context.HttpContext, body: json, tplPath: endpointMagicodesData.TemplatePath,
                         type: endpointMagicodesData.Type);
                 }
             }

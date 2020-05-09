@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using Magicodes.ExporterAndImporter.Tests.Models.Export;
+using System.IO;
 
 namespace Magicodes._64.Controllers
 {
@@ -55,7 +56,7 @@ namespace Magicodes._64.Controllers
         }
 
         [HttpGet("pdf")]
-        [Magicodes(Type = typeof(BatchPortraitReceiptInfoInput))]
+        [Magicodes(Type = typeof(BatchPortraitReceiptInfoInput), TemplatePath = ".//ExportTemplates//batchReceipt.cshtml")]
         public BatchPortraitReceiptInfoInput Pdf()
         {
 
@@ -89,7 +90,7 @@ namespace Magicodes._64.Controllers
 
 
         [HttpGet("Html")]
-        [Magicodes(Type = typeof(ReceiptInfo))]
+        [Magicodes(Type = typeof(ReceiptInfo), TemplatePath = ".//ExportTemplates//receipt.cshtml")]
         public ReceiptInfo Html()
         {
 
@@ -111,7 +112,7 @@ namespace Magicodes._64.Controllers
             };
         }
         [HttpGet("Word")]
-        [Magicodes(Type = typeof(ReceiptInfo))]
+        [Magicodes(Type = typeof(ReceiptInfo), TemplatePath = ".//ExportTemplates//batchReceipt.cshtml")]
         public ReceiptInfo Word()
         {
 

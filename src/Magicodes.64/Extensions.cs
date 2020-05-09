@@ -28,15 +28,54 @@ namespace Magicodes._64
         {
             return JsonConvert.DeserializeObject<DataTable>(json);
         }
-        public async Task HandleSuccessfulReqeustAsync(HttpContext context, object body, int httpStatusCode, Type type)
+        public async Task HandleSuccessfulReqeustAsync(HttpContext context, object body,Type type,string tplPath)
         {
+            var contentType = "";
+            string filename = DateTime.Now.ToString("yyyyMMddHHmmss");
+            byte[] result = null;
+            switch (context.Request.ContentType)
+            {
+                case HttpContentMediaType.XLSXHttpContentMediaType:
+                    filename += ".xlsx";
+                    var dt = ToDataTable(body?.ToString());
+                    contentType = HttpContentMediaType.XLSXHttpContentMediaType;
+                    var exporter = new ExcelExporter();
+                    result = await exporter.ExportAsByteArray(dt, type);
+                    break;
+                case HttpContentMediaType.PDFHttpContentMediaType:
+                    filename += ".pdf";
+                    contentType = HttpContentMediaType.PDFHttpContentMediaType;
+                    IExportFileByTemplate pdfexporter = new PdfExporter();
+                    tplPath = Path.Combine(Directory.GetCurrentDirectory(), "ExportTemplates",
+                        "batchReceipt.cshtml");
+                    var tpl = File.ReadAllText(tplPath);
+                    var obj = JsonConvert.DeserializeObject(body.ToString(), type);
+                    result = await pdfexporter.ExportBytesByTemplate(obj, tpl, type);
+                    break;
+                case HttpContentMediaType.HTMLHttpContentMediaType:
+                    filename += ".html";
+                    contentType = HttpContentMediaType.HTMLHttpContentMediaType;
+                    IExportFileByTemplate htmlexporter = new HtmlExporter();
+                    result = await htmlexporter.ExportBytesByTemplate(JsonConvert.DeserializeObject(body.ToString(), type), File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "ExportTemplates",
+                        "receipt.cshtml")), type);
+                    break;
+                case HttpContentMediaType.DOCXHttpContentMediaType:
+                    filename += ".docx";
+                    IExportFileByTemplate docxexporter = new WordExporter();
+                    result = await docxexporter.ExportBytesByTemplate(JsonConvert.DeserializeObject(body.ToString(), type), File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "ExportTemplates",
+                        "receipt.cshtml")), type);
+                    break;
+                default:
+                    break;
+            }
+
             #region  excel
             //var dt = ToDataTable(body?.ToString());
             ////Excel
             //IExporter exporter = new ExcelExporter();
             //var result = await exporter.ExportAsByteArray(dt, type);
             //context.Response.Headers.Add("Content-Disposition", "attachment;filename=test.xlsx");
-            //context.Response.ContentType = "application/vnd.ms-excel; charset=UTF-8";
+            //context.Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; charset=UTF-8";
             #endregion
 
             #region PDF
@@ -58,21 +97,23 @@ namespace Magicodes._64
             //var obj = JsonConvert.DeserializeObject(body.ToString(), type);
             //var result = await exporter.ExportBytesByTemplate(obj, tpl, type);
             //context.Response.Headers.Add("Content-Disposition", "attachment;filename=test.html");
-            //context.Response.ContentType = "application/html; charset=UTF-8";
+            //context.Response.ContentType = "text/html; charset=UTF-8";
             #endregion
 
             #region Word
-            IExportFileByTemplate exporter = new WordExporter();
-            var tplPath = Path.Combine(Directory.GetCurrentDirectory(), "ExportTemplates",
-                "receipt.cshtml");
-            var tpl = File.ReadAllText(tplPath);
-            var obj = JsonConvert.DeserializeObject(body.ToString(), type);
-            var result = await exporter.ExportBytesByTemplate(obj, tpl, type);
-            context.Response.Headers.Add("Content-Disposition", "attachment;filename=test.docx");
-            context.Response.ContentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+            //IExportFileByTemplate exporter = new WordExporter();
+            //var tplPath = Path.Combine(Directory.GetCurrentDirectory(), "ExportTemplates",
+            //    "receipt.cshtml");
+            //var tpl = File.ReadAllText(tplPath);
+            //var obj = JsonConvert.DeserializeObject(body.ToString(), type);
+            //var result = await exporter.ExportBytesByTemplate(obj, tpl, type);
+            //context.Response.Headers.Add("Content-Disposition", "attachment;filename=test.docx");
+            //context.Response.ContentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
 
             #endregion
 
+            context.Response.Headers.Add("Content-Disposition", $"attachment;filename={filename}");
+            context.Response.ContentType = contentType;
             await context.Response.Body.WriteAsync(result, 0, result.Length);
         }
     }

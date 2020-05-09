@@ -31,7 +31,7 @@ namespace Magicodes._64
                     await _next.Invoke(context);
                     context.Response.Body = originalResponseBodyStream;
                     var bodyAsText = await _extensions.ReadResponseBodyStreamAsync(memoryStream);
-                    await _extensions.HandleSuccessfulReqeustAsync(context: context, body: bodyAsText, httpStatusCode: 200,
+                    await _extensions.HandleSuccessfulReqeustAsync(context: context, body: bodyAsText, tplPath: endpointMagicodesData.TemplatePath,
                         type: endpointMagicodesData.Type);
                 }
                 else
