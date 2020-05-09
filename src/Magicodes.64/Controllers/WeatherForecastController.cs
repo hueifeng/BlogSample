@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Magicodes._64.Attributes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
 
 namespace Magicodes._64.Controllers
 {
@@ -22,11 +21,12 @@ namespace Magicodes._64.Controllers
         {
             _logger = logger;
         }
-
+        
         [HttpGet]
+        [Magicodes(Type = typeof(StudentExcel))]
         public List<StudentExcel> Get()
         {
-            var list = new List<StudentExcel>()
+            var list = new List<StudentExcel>
             {
                 new StudentExcel
                 {
@@ -51,6 +51,38 @@ namespace Magicodes._64.Controllers
                 }
             };
             return list;
+        }
+
+        [HttpGet("Test")]
+        [Magicodes]
+        public ContentResult Test()
+        {
+            return Content("1111");
+            //var list = new List<StudentExcel>
+            //{
+            //    new StudentExcel
+            //    {
+            //        Name = "MR.A",
+            //        Age = 18,
+            //        Remarks = "我叫MR.A,今年18岁",
+            //        Birthday = DateTime.Now
+            //    },
+            //    new StudentExcel
+            //    {
+            //        Name = "MR.B",
+            //        Age = 19,
+            //        Remarks = "我叫MR.B,今年19岁",
+            //        Birthday = DateTime.Now
+            //    },
+            //    new StudentExcel
+            //    {
+            //        Name = "MR.C",
+            //        Age = 20,
+            //        Remarks = "我叫MR.C,今年20岁",
+            //        Birthday = DateTime.Now
+            //    }
+            //};
+            //return list;
         }
     }
 }
