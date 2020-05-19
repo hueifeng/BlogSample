@@ -25,7 +25,7 @@ https://www.cnblogs.com/yyfh/
 - [ ] ASP.NET Core 网站安全措施
 - [ ] ASP.NET Core Kestrel服务器(Web Server)
 - [ ] ASP.NET Core 应用程序(Appliaction)生命周期
-- [ ] ASP.NET Core 依赖注入(Dependency Injection)
+- [x] [ASP.NET Core 依赖注入(Dependency Injection)](https://www.cnblogs.com/yyfh/p/12915067.html)
 - [ ] ASP.NET Core 静态文件中间件(StaticFile)
 - [ ] ASP.NET Core 进程内托管(InProcess)
 - [ ] ASP.NET Core 进程外托管(OutofProcess)
