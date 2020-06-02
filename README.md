@@ -29,5 +29,6 @@ https://www.cnblogs.com/yyfh/
 - [ ] ASP.NET Core 静态文件中间件(StaticFile)
 - [ ] ASP.NET Core 进程内托管(InProcess)
 - [ ] ASP.NET Core 进程外托管(OutofProcess)
+- [x] [ASP.NET Core 3.x API版本控制](https://www.cnblogs.com/yyfh/p/13033543.html)
 
 
