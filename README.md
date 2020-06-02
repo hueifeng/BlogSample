@@ -1,7 +1,4 @@
-
-![GitHub](https://img.shields.io/github/license/hueifeng/BlogSample)
-
-# 博客园地址
+# Blog 
 
 https://www.cnblogs.com/yyfh/
 
