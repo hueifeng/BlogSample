@@ -46,6 +46,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadBalanceDemo", "src\Load
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95663004-A7B6-4733-9FE0-CF17A973B29A}"
 	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
 		README.md = README.md
 	EndProjectSection
 EndProject
