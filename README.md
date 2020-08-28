@@ -28,4 +28,10 @@ https://blog.stackable.cn/
 - [ ] ASP.NET Core 进程外托管(OutofProcess)
 - [x] [ASP.NET Core 3.x API版本控制](https://www.cnblogs.com/yyfh/p/13033543.html)
 
+# 【Azure DevOps系列】
+
+- [x] [什么是Azure DevOps](https://blog.stackable.cn/post/2020/8/16/what-is-devops)
+- [x] [开始第一个Azure DevOps应用](https://blog.stackable.cn/post/2020/8/25/start-the-first-azuredevops-application)
+
+
 
