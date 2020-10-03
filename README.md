@@ -34,5 +34,6 @@ https://blog.stackable.cn/
 - [x] [开始第一个Azure DevOps应用](https://blog.stackable.cn/post/2020/8/25/start-the-first-azuredevops-application)
 - [x] [Azure DevOps生成代码覆盖率](https://blog.stackable.cn/post/2020/8/31/azure-devopsazure-devops-generation-coverage)
 - [x] [Azure DevOps构建并发布Nuget程序包](https://blog.stackable.cn/post/2020/9/7/azure-devops-nuget-publish)
+- [x] [Azure DevOps构建并发布.NET5应用程序](https://blog.stackable.cn/post/2020/9/24/azure-devopsazure-devopsnet5)
 
 
