@@ -1,7 +1,3 @@
-# Blog 
-
-https://blog.stackable.cn/
-
 # Blog
 
 - [ ] ASP.NET Core 路由配置和使用(Routing)
