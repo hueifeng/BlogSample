@@ -31,5 +31,6 @@
 - [x] [Azure DevOps生成代码覆盖率](https://blog.stackable.cn/post/2020/8/31/azure-devopsazure-devops-generation-coverage)
 - [x] [Azure DevOps构建并发布Nuget程序包](https://blog.stackable.cn/post/2020/9/7/azure-devops-nuget-publish)
 - [x] [Azure DevOps构建并发布.NET5应用程序](https://blog.stackable.cn/post/2020/9/24/azure-devopsazure-devopsnet5)
+- [x] [如何在Azure DevOps上构建Docker镜像（一）](https://blog.stackable.cn/post/2020/10/14/how-to-build-docker-image-on-azuredevops)
 
 
