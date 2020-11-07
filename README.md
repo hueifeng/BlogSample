@@ -1,7 +1,3 @@
-# Blog 
-
-https://blog.stackable.cn/
-
 # Blog
 
 - [ ] ASP.NET Core 路由配置和使用(Routing)
@@ -27,5 +23,14 @@ https://blog.stackable.cn/
 - [ ] ASP.NET Core 进程内托管(InProcess)
 - [ ] ASP.NET Core 进程外托管(OutofProcess)
 - [x] [ASP.NET Core 3.x API版本控制](https://www.cnblogs.com/yyfh/p/13033543.html)
+
+# 【Azure DevOps系列】
+
+- [x] [什么是Azure DevOps](https://blog.stackable.cn/post/2020/8/16/what-is-devops)
+- [x] [开始第一个Azure DevOps应用](https://blog.stackable.cn/post/2020/8/25/start-the-first-azuredevops-application)
+- [x] [Azure DevOps生成代码覆盖率](https://blog.stackable.cn/post/2020/8/31/azure-devopsazure-devops-generation-coverage)
+- [x] [Azure DevOps构建并发布Nuget程序包](https://blog.stackable.cn/post/2020/9/7/azure-devops-nuget-publish)
+- [x] [Azure DevOps构建并发布.NET5应用程序](https://blog.stackable.cn/post/2020/9/24/azure-devopsazure-devopsnet5)
+- [x] [如何在Azure DevOps上构建Docker镜像（一）](https://blog.stackable.cn/post/2020/10/14/how-to-build-docker-image-on-azuredevops)
 
 
