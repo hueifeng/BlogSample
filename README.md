@@ -34,6 +34,7 @@
 - [x] [如何在Azure DevOps上构建Docker镜像（一）](https://blog.stackable.cn/post/2020/10/14/how-to-build-docker-image-on-azuredevops)
 - [x] [Azure DevOps使用Docker将.NET应用程序部署在云服务器](https://blog.stackable.cn/post/2020/10/22/azure-devops-docker-to-deploy-dotnet-on-cloudservers)
 - [x] [Azure DevOps多阶段构建](https://blog.stackable.cn/post/2020/10/28/azureops-multi-stage-continuous-deploy)
+- [x] [Azure DevOps EFCore命令式脚本部署到SQL数据库](https://blog.stackable.cn/post/2020/12/9/azure-devopsazure-devops-efcoresql)
 
 
 
