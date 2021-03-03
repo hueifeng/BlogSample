@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>EXE</OutputType>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+
+    <!--ReferenceOutputAssembly	 如果设置为 false，则不包括引用项目的输出作为此项目的引用，但仍可确保在此项目之前生成其他项目。 默认为 true。-->
+    <!--OutputItemType 可选项，将目标要输出的类型，默认为空，如果引用值设置为true（默认值），那么目标输出将为编译器的引用。-->
+  </ItemGroup>
+
+</Project>
+
