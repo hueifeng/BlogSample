@@ -1,0 +1,19 @@
+﻿@page
+@using ViewComponentDemo.ViewComponents
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@addTagHelper *, ViewComponentDemo
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @*
+        @Component.InvokeAsync("Input")
+    *@
+        <vc:button type="@ButtonType.Success"></vc:button>
+ @*   @await Component.InvokeAsync("Button")*@
+</div>
+
+
