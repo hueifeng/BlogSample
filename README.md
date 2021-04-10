@@ -23,7 +23,7 @@
 - [ ] ASP.NET Core 进程内托管(InProcess)
 - [ ] ASP.NET Core 进程外托管(OutofProcess)
 - [x] [ASP.NET Core 3.x API版本控制](https://www.cnblogs.com/yyfh/p/13033543.html)
-
+- [x] [ASP.NET Core View Component](https://hueifeng.com/post/2021/4/10/using-viewcomponents-in-asp-net-core)
 # 【Azure DevOps系列】
 
 - [x] [什么是Azure DevOps](https://blog.stackable.cn/post/2020/8/16/what-is-devops)
