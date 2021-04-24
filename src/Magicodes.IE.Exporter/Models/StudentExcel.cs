@@ -4,7 +4,7 @@ using System;
 
 namespace Magicodes.IE.Exporter.Models
 {
-    [ExcelExporter(Name = "学生信息", TableStyle = "Light10", AutoFitAllColumn = true,
+    [ExcelExporter(Name = "学生信息", TableStyle = OfficeOpenXml.Table.TableStyles.Dark10, AutoFitAllColumn = true,
         MaxRowNumberOnASheet = 2)]
     public class StudentExcel
     {
