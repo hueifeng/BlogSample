@@ -9,8 +9,4 @@
     <PackageReference Include="ObjectDumper.NET" Version="2.5.20033.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CSharp9Demo\CSharp9Demo.csproj" />
-  </ItemGroup>
-
 </Project>
