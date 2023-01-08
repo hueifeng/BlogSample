@@ -10,7 +10,7 @@
     <PackageReference Include="Magicodes.IE.Excel" Version="2.5.3.7" />
     <PackageReference Include="Magicodes.IE.Pdf" Version="2.5.3.7" />
     <PackageReference Include="Magicodes.IE.Word" Version="2.5.3.7" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
   <ItemGroup>
